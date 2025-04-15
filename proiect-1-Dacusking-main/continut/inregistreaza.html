@@ -1,0 +1,71 @@
+
+        <form action="action_page.php">
+            <h1>Înregistrare</h1>
+            <p><b>Completați formularul pentru a vă înregistra</b></p>
+            <hr>
+            <div>
+                <i>Informații generale</i>
+                <br><br>
+                <label for="nickname"><b>Nume utilizator</b></label>
+                <input type="text" placeholder="Nume utilizator" name="nickname" id="nickname" required>
+                <br>
+                <label for="psw"><b>Parolă</b></label>
+                <input type="password" placeholder="Introduceți parolă" name="psw" id="psw" required>
+                <br>  
+                <label for="nume"><b>Nume</b></label>
+                <input type="text" placeholder="Nume" name="nume" id="nume" required>
+                <br>
+                <label for="prenume"><b>Prenume</b></label>
+                <input type="text" placeholder="Prenume" name="prenume" id="prenume" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                <br>
+                <label for="tele"><b>Telefon</b></label>
+                <input type="tel" placeholder="Telefon" name="tele" id="tele" required>
+                <br>
+            </div>
+            <div>
+                <i>Informații personale</i>
+                <br><br>
+                <label for="sexy">Sexul:</label>
+                <select name="Sexul" id="sexy">
+                    <option value="masculin">Mascul</option>
+                    <option value="feminin">Femeie</option>
+                    <option value="altele">Altele</option>
+                </select>
+                <br>
+                <label for="mâncare">Mâncare preferată:</label>
+                <input list="mâncaruri" name="mâncare" id="mâncare">
+                <datalist id="mâncaruri">
+                    <option value="Pizza">
+                    <option value="Hamburger">
+                    <option value="Ciulama">
+                    <option value="Ciorbă">
+                    <option value="Sărățele">
+                </datalist>
+                <br>
+                <label for="favcolor">Culoare preferată:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <br>
+                <label for="data">Data nașterii:</label>
+                <input type="date" id="data" name="data" value="1945-01-01">
+                <br>
+                <label for="naștere">Ora nașterii:</label>
+                <input type="time" id="naștere" name="naștere" value="00:00:00">
+                <br>
+                <label for="vârstă">Vârstă:</label>
+                <input type="range" id="vârstă" name="vârstă" value="00" min="0" max="150">
+                <br>
+                <label for="paginâ">Adresa paginii personale:</label>
+                <input type="url" id="paginâ" name="paginâ">
+                <br>
+                <label for="descrie">Descriere:</label>
+                <textarea id="descrie" name="tabelă" rows="5" cols="30"></textarea>
+                <br>
+            </div>
+            <button type="button" onclick="inregistrareUtilizator()">Înregistrează</button>
+            <br>
+            <hr>
+        
+        </form>

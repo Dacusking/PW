@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+,adresa)>
+<!ELEMENT persoana (nume,prenume,varsta,cv-an-nastere)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT cv-an-nastere (#PCDATA)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+
+
+<!ATTLIST persoana id CDATA #REQUIRED>
+]>
+<persoane>
+   <persoana id="1">
+       <nume>Popescu</nume>
+       <prenume>Ion</prenume>
+       <varsta>23</varsta>
+       <cv-an-nastere>2001</cv-an-nastere>
+   </persoana>
+   <persoana id="2">
+       <nume>Stanescu</nume>
+       <prenume>George</prenume>
+       <varsta>40</varsta>
+       <cv-an-nastere>1984</cv-an-nastere>
+   </persoana>
+   <persoana id="3">
+       <nume>Andreescu</nume>
+       <prenume>Vasile</prenume>
+       <varsta>19</varsta>
+       <cv-an-nastere>2005</cv-an-nastere>
+   </persoana>
+   <adresa>
+       <strada>Al.I.Cuza</strada>
+       <numar>15</numar>
+       <localitate>Cuza Voda</localitate>
+       <judet>Iasi</judet>
+       <tara>Romania</tara>
+   </adresa>
+</persoane>

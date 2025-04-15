@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Acasă</title>
+        <link rel="stylesheet" href="css/stil.css">
+        <script src="js/script.js"></script>
+        <link rel="icon"  type="image/x-icon"  href="favicon.ico">
+    </head>
+    <body onload="schimbaContinut('acasa')">
+        <header>
+            <nav>
+                <a onclick="schimbaContinut('desen')">Desen</a> |
+                <a onclick="schimbaContinut('despre')">Despre</a> |
+                <a onclick="schimbaContinut('inregistreaza','js/script.js')">Inregistrare</a> |
+                <a onclick="schimbaContinut('video')">Video</a> |
+                <a onclick="schimbaContinut('invat','js/script.js','initialLoad')">Învăț</a> |
+                <a onclick="schimbaContinut('acasa')">Acasă</a> |
+                <a onclick="schimbaContinut('verificare')">Verificare</a> |
+                <a onclick="schimbaContinut('cumparaturi','js/cumparaturi.js','adaugaProdus')">Cumparaturi</a>
+
+            </nav>
+        </header>
+        
+        <main id="continut">
+        </main>
+        <a onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">Persoane</a>
+
+        <footer>
+            <p>&copy; 2024.. TanksTechTrees</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+    <div id="Div">
+        <h2>Secțiunea 1</h2>
+        <p id="p1">Loading...</p>
+        <p id="url"></p>
+        <p id="location"></p>
+        <p id="browser"></p>
+        <p id="os"></p>
+    </div>
+    <div id="canvasDiv">
+        <h2>Secțiunea 2</h2>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        <input type="color" id="strokeColorPicker" value="#000000">
+        <input type="color" id="fillColorPicker" value="#ffffff">
+        <button onclick="clearCanvas()">Reset Canvas</button>
+    </div>
+    <div id="tableDiv">
+        <h2>Secțiunea 3</h2>
+        <label for="position">Poziție (linie/coloană): </label>
+        <input type="text" id="position">
+        <label for="colorPicker">Culoare de fundal: </label>
+        <input type="color" id="colorPicker" value="#ffffff">
+        <button onclick="insertRow()">Inserare linie nouă</button>
+        <button onclick="insertColumn()">Inserare coloană nouă</button>
+        <table id="myTable">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Col 1</td>
+                <td>Row 1, Col 2</td>
+                <td>Row 1, Col 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Col 1</td>
+                <td>Row 2, Col 2</td>
+                <td>Row 2, Col 3</td>
+            </tr>
+        </table>
+    </div>
